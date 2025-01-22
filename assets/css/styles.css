@@ -244,13 +244,6 @@ footer {
             }
         }
     }
-    .menu-toggle {
-        display: block !important;
-        position: absolute;
-        right: .5em;
-        top: .75em;
-    }
-
 }
 
 @media (max-width: 1200px) {
@@ -262,6 +255,26 @@ footer {
         }
         iframe {
             grid-area: 4 / 1 / 5 / 2;
+        }
+    }
+
+    .menu-toggle {
+        display: block !important;
+        position: absolute;
+        right: .5em;
+        top: .75em;
+    }
+
+    header {
+        display: block;
+        nav {
+            .menu {
+                display: none;
+                margin: auto;
+            }
+            .menu li {
+                text-align: center;
+            }
         }
     }
 }
