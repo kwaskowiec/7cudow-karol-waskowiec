@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <script>
         function toggleMenu() {
-            if (window.innerWidth > 768) return;
+            if (window.innerWidth >= 1200) return;
             const menu = document.querySelector('.menu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            if (window.innerWidth >= 600) menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+            else menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
         }
     </script>
 </head>
